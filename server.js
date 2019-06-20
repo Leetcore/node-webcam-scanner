@@ -46,7 +46,7 @@ async function startScanner() {
         }
     }
     // rescan in 30 mins
-    setTimeout(startScanner, 30 * 60 * 1000);
+    setTimeout(startScanner, 6 * 60 * 60 * 1000);
 }
 startScanner();
 
