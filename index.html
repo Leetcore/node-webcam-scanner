@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Open Webcam Scanner</title>
+    <style>
+        body {
+            font-size: 120%;
+            background-color: rgb(102, 161, 139);
+            text-align: center;
+        }
+        img {
+            max-width: 800px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Open Webcam Scanner</h1>
+    Found: <span id="stats"></span><br/>
+    <div id="results"></div>
+    <script>
+        // check results from server
+        function checkUrls() {
+            const resultDIV = document.getElementById('results');
+            const stats = document.getElementById('stats');
+            fetch('/webcamurls').then(async (response) => {
+                var urls = await response.json();
+                console.log('urls: ' + urls.length);
+                stats.innerText = urls.length;
+                if (urls.length > 0) {
+                    resultDIV.innerHTML = '';
+                    // show img
+                    urls.forEach(url => {
+                        resultDIV.insertAdjacentHTML(
+                            'beforeend',
+                            '<img src="' + url +'"/><br>'
+                        );
+                    });
+                }
+            })
+            setTimeout(checkUrls, 30 * 1000);
+        }
+        checkUrls();
+    </script>
+</body>
+</html>
