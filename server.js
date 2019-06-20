@@ -4,7 +4,6 @@ const request = require('request');
 const express = require('express');
 const app = express();
 
-
 // http://expressjs.com/en/starter/static-files.html
 app.use(express.static('public'));
 
@@ -18,7 +17,7 @@ const listener = app.listen('1337' || process.env.PORT, function () {
     console.log('Your app is listening on port ' + listener.address().port);
 });
 
-// make the found webcam urls avaiable
+// make the found webcam urls available
 function updateWebcamUrls() {
     app.get('/webcamurls', function (request, response) {
         response.send(webcamUrls);
@@ -27,32 +26,25 @@ function updateWebcamUrls() {
 }
 updateWebcamUrls();
 
-const defaultPort = '80,8080';
+const defaultPorts = '80,8080';
 let webcamUrls = [];
-function startScanner() {
+
+// starte the scanner
+async function startScanner() {
     console.log('scan started');
+    webcamUrls = [];
     // example range: 93.210.176.0/24, 87.97.166.87
     // my range: 87.169.162.0/24
     // full range: 87.160.0.0 - 87.186.159.255
-    scanner('87.169.0.0/16', defaultPort).then(result => {
-        webcamUrls = [];
-        console.log('webserver found: http://' + result.ip + ':' + result.port + '/');
-        // try connection
-        request('http://' + result.ip + ':' + result.port + '/', function (error, response, body) {
-            if (!error && response.statusCode == 200) {
-                console.log('server: '+ (response.headers.server || 'no entry'));
-                // check header for ip webcam
-                if ((response.headers.server || '').toLowerCase().indexOf('ip webcam') >= 0) {
-                    console.log('webcam found!');
-                    console.log('http://' + result.ip + ':' + result.port + '/video');
-                    // save url in results
-                    webcamUrls.push('http://' + result.ip + ':' + result.port + '/video');
-                }
-            }
-        });
-    }).catch(error => {
-        console.warn(error);
-    })
+    for (var oct2 = 1; oct2 < 255; oct2++) {
+        for (var oct3 = 1; oct3 < 255; oct3++) {
+            const scanRange = '87.'+ oct2 +'.'+ oct3 +'.0/24';
+            console.log('scan range: '+ scanRange)
+            await scanner(scanRange, defaultPorts).catch(error => {
+                console.warn(error);
+            });
+        }
+    }
     // rescan in 30 mins
     setTimeout(startScanner, 30 * 60 * 1000);
 }
@@ -65,18 +57,16 @@ function scanner(ip, port) {
             target: ip,
             port: port,
             status: 'O', // Timeout, Refused, Open, Unreachable
-            timeout: 5000,
-            concurrency: 10,
-            banner: true
+            timeout: 3000
         });
 
         scanner.on('result', function (data) {
-            // fired when item is matching options
-            resolve(data);
+            // try to connect with the service
+            checkConnection(data);
         });
 
         scanner.on('done', function () {
-            console.log('range scanned');
+            resolve();
         });
 
         scanner.on('error', function (err) {
@@ -84,5 +74,25 @@ function scanner(ip, port) {
         });
 
         scanner.run();
+    });
+}
+
+function checkConnection(result) {
+    const ip = result.ip;
+    const port = result.port;
+    
+    // try connection
+    request('http://' + ip + ':' + port + '/', function (error, response, body) {
+        if (!error && response.statusCode == 200) {
+            console.log('webserver found: http://' + ip + ':' + port + '/');
+            console.log('server header: '+ (response.headers.server || 'no entry'));
+            // check header for ip webcam
+            if ((response.headers.server || '').toLowerCase().indexOf('ip webcam') >= 0) {
+                console.log('ip webcam found!');
+                console.log('http://' + ip + ':' + port + '/video');
+                // save url in results
+                webcamUrls.push('http://' + ip + ':' + port + '/video');
+            }
+        }
     });
 }
