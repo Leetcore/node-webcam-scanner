@@ -37,16 +37,14 @@ async function startScanner() {
     // my range: 87.169.162.0/24
     // full range: 87.160.0.0 - 87.186.159.255
     for (var oct2 = 1; oct2 < 255; oct2++) {
-        for (var oct3 = 1; oct3 < 255; oct3++) {
-            const scanRange = '87.'+ oct2 +'.'+ oct3 +'.0/24';
-            console.log('scan range: '+ scanRange)
-            await scanner(scanRange, defaultPorts).catch(error => {
-                console.warn(error);
-            });
-        }
+        const scanRange = '87.'+ oct2 +'.0.0/16';
+        console.log('scan range: '+ scanRange)
+        await scanner(scanRange, defaultPorts).catch(error => {
+            console.warn(error);
+        });
     }
     // rescan in 30 mins
-    setTimeout(startScanner, 6 * 60 * 60 * 1000);
+    setTimeout(startScanner, 30 * 60 * 1000);
 }
 startScanner();
 
@@ -56,8 +54,7 @@ function scanner(ip, port) {
         let scanner = new evilscan({
             target: ip,
             port: port,
-            status: 'O', // Timeout, Refused, Open, Unreachable
-            timeout: 3000
+            status: 'O' // Timeout, Refused, Open, Unreachable
         });
 
         scanner.on('result', function (data) {
@@ -88,7 +85,7 @@ function checkConnection(result) {
             console.log('server header: '+ (response.headers.server || 'no entry'));
             // check header for ip webcam
             if ((response.headers.server || '').toLowerCase().indexOf('ip webcam') >= 0) {
-                console.log('ip webcam found!');
+                console.log('>>> ip webcam found! :');
                 console.log('http://' + ip + ':' + port + '/video');
                 // save url in results
                 webcamUrls.push('http://' + ip + ':' + port + '/video');
