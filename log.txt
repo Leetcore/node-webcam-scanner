@@ -1,0 +1,171 @@
+webserver found: http://1.1.1.1:80/ , server header: cloudflare, title: <title>1.1.1.1 — The free app that makes your Internet faster.</title>, login: null
+webserver found: http://177.26.167.36:8080/ , server header: IP Webcam Server 0.4, title: <title>IP Webcam</title>, login: null
+webserver found: http://31.212.5.173:80/ , server header: Webs, title: <title></title>, inputform: true!
+webserver found: http://31.212.127.146:80/ , server header: no entry, title: <title> Router </title>, login: true!
+webserver found: http://2.216.1.41:80/ , server header: no entry, title: <title>Login</title>, login: true!
+webserver found: http://2.216.1.174:8080/ , server header: no entry, title: <title>System Hub</title>, login: true!
+webserver found: http://2.216.1.196:80/ , server header: lighttpd/1.4.37, title: <title>Intelligent Digital Security System</title>, login: true!
+webserver found: http://2.216.2.16:80/ , server header: web, title: <title></title>, login: true!
+webserver found: http://2.216.2.53:80/ , server header: DVRDVS-Webs, title: <title>index</title>, login: true!
+webserver found: http://2.216.2.144:80/ , server header: DNVRS-Webs, title: <title></title>, login: true!
+webserver found: http://2.216.3.19:80/ , server header: Boa/0.94.14rc21, title: <title>
+			</title>, login: true!
+webserver found: http://2.216.5.98:80/ , server header: Webs, title: <title></title>, login: true!
+webserver found: http://2.216.6.68:80/ , server header: Webs, title: <title></title>, login: true!
+webserver found: http://2.216.6.91:80/ , server header: Boa/0.94.14rc21, title: <title>Intelligent Digital Security System</title>, login: true!
+webserver found: http://2.216.6.196:80/ , server header: uc-httpd 1.0.0, title: <title>NETSuveillance WEB</title>, login: true!
+webserver found: http://2.216.7.31:80/ , server header: GoAhead-Webs/2.5.0, title: <title>Video Client</title>, login: true!
+webserver found: http://2.216.7.246:80/ , server header: DNVRS-Webs, title: <title></title>, login: true!
+webserver found: http://2.216.9.108:80/ , server header: no entry, title: <title></title>, login: true!
+webserver found: http://2.216.13.28:80/ , server header: Qualvision -HTTPServer, title: null, login: true!
+webserver found: http://2.216.14.165:80/ , server header: DNVRS-Webs, title: <title></title>, login: true!
+webserver found: http://2.216.14.161:80/ , server header: DVRDVS-Webs, title: <title>index</title>, login: true!
+webserver found: http://2.216.16.86:80/ , server header: DNVRS-Webs, title: <title></title>, login: true!
+webserver found: http://2.216.16.142:80/ , server header: Qualvision -HTTPServer, title: null, login: true!
+webserver found: http://2.216.18.181:80/ , server header: DNVRS-Webs, title: <title>index</title>, login: true!
+webserver found: http://2.216.21.49:80/ , server header: DNVRS-Webs, title: <title></title>, login: true!
+webserver found: http://2.216.22.1:80/ , server header: DNVRS-Webs, title: <title></title>, login: true!
+webserver found: http://2.216.25.59:80/ , server header: Apache, title: null, login: true!
+webserver found: http://2.216.25.223:80/ , server header: Webs, title: <title></title>, login: true!
+webserver found: http://2.216.26.30:80/ , server header: no entry, title: <title>WEB SERVICE</title>, login: true!
+webserver found: http://2.216.26.63:80/ , server header: web, title: <title></title>, login: true!
+webserver found: http://2.216.28.63:80/ , server header: DNVRS-Webs, title: <title></title>, login: true!
+webserver found: http://2.216.29.98:80/ , server header: web, title: <title></title>, login: true!
+webserver found: http://2.216.30.19:80/ , server header: Apache, title: null, login: true!
+webserver found: http://2.216.30.52:80/ , server header: Webs, title: <title></title>, login: true!
+webserver found: http://2.216.30.92:80/ , server header: WCY_WEBServer/2.0, title: <title>IVSWeb 2.0 - Welcome</title>, login: true!
+webserver found: http://2.216.31.114:80/ , server header: DNVRS-Webs, title: <title></title>, login: true!
+webserver found: http://2.216.31.144:80/ , server header: DNVRS-Webs, title: <title></title>, login: true!
+webserver found: http://2.216.31.158:8080/ , server header: http server 1.0, title: null, login: true!
+webserver found: http://2.216.31.158:80/ , server header: Apache, title: null, login: true!
+webserver found: http://2.216.31.239:80/ , server header: DNVRS-Webs, title: <title>index</title>, login: true!
+webserver found: http://2.216.31.231:80/ , server header: Boa/0.94.14rc21, title: <title></title>, login: true!
+webserver found: http://2.216.33.17:80/ , server header: uc-httpd 1.0.0, title: <title>NETSurveillance WEB</title>, login: true!
+webserver found: http://2.216.37.85:80/ , server header: DNVRS-Webs, title: <title></title>, login: true!
+webserver found: http://2.216.39.105:80/ , server header: uc-httpd 1.0.0, title: <title>NETSurveillance WEB</title>, login: true!
+webserver found: http://2.216.39.215:8080/ , server header: lighttpd/1.4.35, title: null, login: true!
+webserver found: http://2.216.40.207:80/ , server header: DNVRS-Webs, title: <title></title>, login: true!
+webserver found: http://2.216.41.58:80/ , server header: lighttpd/1.4.37, title: <title>Intelligent Digital Security System</title>, login: true!
+webserver found: http://2.216.44.191:80/ , server header: GoAhead-Webs/2.5.0, title: <title>Video Client</title>, login: true!
+webserver found: http://2.216.46.49:80/ , server header: DNVRS-Webs, title: <title></title>, login: true!
+webserver found: http://2.216.47.6:8080/ , server header: DNVRS-Webs, title: <title></title>, login: true!
+webserver found: http://2.216.48.13:80/ , server header: DNVRS-Webs, title: <title></title>, login: true!
+webserver found: http://2.216.65.99:80/ , server header: Boa/0.94.14rc21, title: <title></title>, login: true!
+webserver found: http://2.216.65.156:80/ , server header: DNVRS-Webs, title: <title>index</title>, login: true!
+webserver found: http://2.216.66.76:80/ , server header: DNVRS-Webs, title: <title></title>, login: true!
+webserver found: http://2.216.68.33:80/ , server header: DNVRS-Webs, title: <title></title>, login: true!
+webserver found: http://2.216.68.244:80/ , server header: DNVRS-Webs, title: <title></title>, login: true!
+webserver found: http://2.216.69.58:80/ , server header: no entry, title: <title data-text="Text.VideoManageSystem"></title>, login: true!
+webserver found: http://2.216.69.115:8080/ , server header: http server 1.0, title: null, login: true!
+webserver found: http://2.216.69.115:80/ , server header: Apache, title: null, login: true!
+webserver found: http://2.216.73.168:8080/ , server header: lighttpd/1.4.35, title: null, login: true!
+webserver found: http://2.216.73.178:80/ , server header: mini_httpd/1.19 19dec2003, title: <title></title>, login: true!
+webserver found: http://2.216.73.197:80/ , server header: Apache, title: null, login: true!
+webserver found: http://2.216.81.117:80/ , server header: Apache/2.2.22 (Ubuntu), title: null, login: true!
+webserver found: http://2.216.82.126:80/ , server header: TP-LINK SmartPlug, title: null, login: true!
+webserver found: http://2.216.83.59:80/ , server header: Microsoft-IIS/10.0, title: null, login: true!
+webserver found: http://2.216.86.185:80/ , server header: no entry, title: <title></title>, login: true!
+webserver found: http://2.216.86.233:80/ , server header: lighttpd/1.4.45, title: <title>Welcome page</title>, login: true!
+webserver found: http://2.216.87.20:80/ , server header: no entry, title: <title>WEB SERVICE</title>, login: true!
+webserver found: http://2.216.91.154:80/ , server header: DNVRS-Webs, title: <title></title>, login: true!
+webserver found: http://2.216.100.82:80/ , server header: web, title: <title></title>, login: true!
+webserver found: http://2.216.101.130:80/ , server header: App-webs/, title: <title></title>, login: true!
+webserver found: http://2.216.103.244:80/ , server header: DNVRS-Webs, title: <title></title>, login: true!
+webserver found: http://2.216.105.96:80/ , server header: web, title: <title></title>, login: true!
+webserver found: http://2.216.105.154:8080/ , server header: http server 1.0, title: null, login: true!
+webserver found: http://2.216.105.154:80/ , server header: Apache, title: null, login: true!
+webserver found: http://2.216.106.148:80/ , server header: DNVRS-Webs, title: <title></title>, login: true!
+webserver found: http://2.216.106.209:80/ , server header: Boa/0.94.14rc21, title: <title></title>, login: true!
+webserver found: http://2.216.109.134:80/ , server header: lighttpd/1.4.28, title: null, login: true!
+webserver found: http://2.216.111.173:80/ , server header: no entry, title: <title>WEB SERVICE</title>, login: true!
+webserver found: http://2.216.112.242:80/ , server header: DNVRS-Webs, title: <title></title>, login: true!
+webserver found: http://2.216.114.86:80/ , server header: DNVRS-Webs, title: <title></title>, login: true!
+webserver found: http://2.216.116.25:80/ , server header: App-webs/, title: <title></title>, login: true!
+webserver found: http://2.216.120.100:80/ , server header: DNVRS-Webs, title: <title></title>, login: true!
+webserver found: http://2.216.121.42:80/ , server header: DNVRS-Webs, title: <title></title>, login: true!
+webserver found: http://2.216.121.174:80/ , server header: no entry, title: <title>Vigor Login Page</title>, login: true!
+webserver found: http://2.216.122.42:80/ , server header: DNVRS-Webs, title: <title></title>, login: true!
+webserver found: http://2.216.122.244:8080/ , server header: http server 1.0, title: null, login: true!
+webserver found: http://2.216.122.244:80/ , server header: Apache, title: null, login: true!
+webserver found: http://2.217.89.163:80/ , server header: Qualvision -HTTPServer, title: null, login: true!
+webserver found: http://2.217.90.99:8080/ , server header: uc-httpd 1.0.0, title: <title>NETSurveillance WEB</title>, login: true!
+webserver found: http://2.217.91.88:80/ , server header: Cross Web Server, title: <title>DVR Components Download</title>, login: true!
+webserver found: http://2.217.91.109:80/ , server header: DNVRS-Webs, title: <title>index</title>, login: true!
+webserver found: http://2.217.93.234:80/ , server header: DNVRS-Webs, title: <title></title>, login: true!
+webserver found: http://2.217.98.189:8080/ , server header: DNVRS-Webs, title: <title></title>, login: true!
+webserver found: http://2.217.98.189:80/ , server header: App-webs/, title: <title></title>, login: true!
+webserver found: http://2.217.99.191:80/ , server header: DNVRS-Webs, title: <title></title>, login: true!
+webserver found: http://2.217.104.37:80/ , server header: DNVRS-Webs, title: <title></title>, login: true!
+webserver found: http://2.217.104.42:80/ , server header: ReeCam IP Camera, title: <title></title>, login: true!
+webserver found: http://2.217.106.92:80/ , server header: DNVRS-Webs, title: <title></title>, login: true!
+webserver found: http://2.217.106.131:80/ , server header: Apache, title: null, login: true!
+webserver found: http://2.217.108.226:80/ , server header: WebServer, title: null, login: true!
+webserver found: http://2.217.108.221:80/ , server header: Boa/0.94.14rc21, title: <title></title>, login: true!
+webserver found: http://2.217.109.123:80/ , server header: no entry, title: null, login: true!
+webserver found: http://2.217.109.252:8080/ , server header: http server 1.0, title: null, login: true!
+webserver found: http://2.217.109.252:80/ , server header: Apache, title: null, login: true!
+webserver found: http://2.217.110.26:80/ , server header: Boa/0.94.14rc21, title: <title></title>, login: true!
+webserver found: http://2.217.116.223:80/ , server header: DNVRS-Webs, title: <title></title>, login: true!
+webserver found: http://2.217.117.48:80/ , server header: Webs, title: <title></title>, login: true!
+webserver found: http://2.217.118.21:80/ , server header: DNVRS-Webs, title: <title></title>, login: true!
+webserver found: http://2.217.133.164:80/ , server header: no entry, title: <title></title>, login: true!
+webserver found: http://2.217.135.77:80/ , server header: Webs, title: <title></title>, login: true!
+webserver found: http://2.217.135.209:80/ , server header: DNVRS-Webs, title: <title></title>, login: true!
+webserver found: http://2.217.141.134:80/ , server header: mcdhttpd/1.2, title: <title></title>, login: true!
+webserver found: http://2.217.144.33:80/ , server header: mcdhttpd/1.2, title: <title>supra Security ID-10HD</title>, login: true!
+webserver found: http://2.217.147.21:80/ , server header: http server 1.0, title: null, login: true!
+webserver found: http://2.217.147.176:80/ , server header: DNVRS-Webs, title: <title>index</title>, login: true!
+webserver found: http://2.218.84.184:80/ , server header: Qualvision -HTTPServer, title: null, login: true!
+webserver found: http://2.218.85.149:80/ , server header: DNVRS-Webs, title: <title></title>, login: true!
+webserver found: http://2.218.85.227:80/ , server header: web, title: <title></title>, login: true!
+webserver found: http://2.218.85.246:80/ , server header: Hikvision-Webs, title: <title>Net Viewer</title>, login: true!
+webserver found: http://2.218.86.36:80/ , server header: DNVRS-Webs, title: <title></title>, login: true!
+webserver found: http://2.218.88.205:80/ , server header: DNVRS-Webs, title: <title></title>, login: true!
+webserver found: http://2.218.89.18:8080/ , server header: uc-httpd 1.0.0, title: <title>NETSuveillance WEB</title>, login: true!
+webserver found: http://2.218.90.81:80/ , server header: App-webs/, title: <title>index</title>, login: true!
+webserver found: http://2.218.93.16:80/ , server header: Boa/0.94.14rc21, title: <title></title>, login: true!
+webserver found: http://2.218.93.51:80/ , server header: ReeCam IP Camera, title: <title></title>, login: true!
+webserver found: http://2.218.94.69:80/ , server header: Apache, title: <title>LenovoEZ - Home Page</title>, login: true!
+webserver found: http://2.218.95.16:80/ , server header: DNVRS-Webs, title: <title></title>, login: true!
+webserver found: http://2.218.98.28:80/ , server header: Qualvision -HTTPServer, title: null, login: true!
+webserver found: http://2.218.99.10:80/ , server header: Apache, title: null, login: true!
+webserver found: http://2.218.100.113:8080/ , server header: http server 1.0, title: null, login: true!
+webserver found: http://2.218.100.113:80/ , server header: Apache, title: null, login: true!
+webserver found: http://2.218.101.232:80/ , server header: Apache, title: null, login: true!
+webserver found: http://2.218.103.2:80/ , server header: Apache/2.4.29 (Ubuntu), title: null, login: true!
+webserver found: http://2.218.104.65:80/ , server header: DNVRS-Webs, title: <title></title>, login: true!
+webserver found: http://2.218.105.230:80/ , server header: no entry, title: null, login: true!
+webserver found: http://2.218.116.248:80/ , server header: Boa/0.94.14rc21, title: <title></title>, login: true!
+webserver found: http://2.218.117.56:80/ , server header: Apache, title: null, login: true!
+webserver found: http://2.218.117.92:8080/ , server header: lighttpd/1.4.35, title: null, login: true!
+webserver found: http://2.218.118.14:80/ , server header: Boa/0.94.14rc21, title: <title></title>, login: true!
+webserver found: http://2.218.120.119:80/ , server header: DNVRS-Webs, title: <title>index</title>, login: true!
+webserver found: http://2.218.122.65:80/ , server header: Apache/2.4.25 (Ubuntu), title: <title>Industrial Dimensions - Construction Site</title>, login: true!
+webserver found: http://2.218.123.8:80/ , server header: DNVRS-Webs, title: <title></title>, login: true!
+webserver found: http://2.218.123.164:80/ , server header: DNVRS-Webs, title: <title></title>, login: true!
+webserver found: http://2.218.124.38:80/ , server header: web, title: <title></title>, login: true!
+webserver found: http://2.218.124.37:80/ , server header: no entry, title: null, login: true!
+webserver found: http://2.218.124.192:80/ , server header: Apache, title: null, login: true!
+webserver found: http://2.218.125.244:8080/ , server header: lighttpd/1.4.35, title: null, login: true!
+webserver found: http://2.218.127.233:80/ , server header: uc-httpd/1.0.0, title: <title>Web Client</title>, login: true!
+webserver found: http://2.218.130.150:80/ , server header: App-webs/, title: <title></title>, login: true!
+webserver found: http://2.218.132.243:80/ , server header: Apache, title: null, login: true!
+webserver found: http://2.218.134.161:80/ , server header: Apache, title: null, login: true!
+webserver found: http://2.218.136.49:80/ , server header: no entry, title: null, login: true!
+webserver found: http://2.218.139.5:80/ , server header: Apache, title: null, login: true!
+webserver found: http://2.218.140.225:80/ , server header: Microsoft-IIS/7.5, title: <title>
+
+</title>, login: true!
+webserver found: http://2.218.144.1:8080/ , server header: DNVRS-Webs, title: <title></title>, login: true!
+webserver found: http://2.218.145.31:80/ , server header: DNVRS-Webs, title: <title></title>, login: true!
+webserver found: http://2.218.147.244:80/ , server header: DNVRS-Webs, title: <title></title>, login: true!
+webserver found: http://2.218.148.141:80/ , server header: no entry, title: <title>WEB SERVICE</title>, login: true!
+webserver found: http://2.218.150.21:80/ , server header: DNVRS-Webs, title: <title></title>, login: true!
+webserver found: http://2.218.151.155:80/ , server header: lighttpd/1.4.28, title: <title>Web Viewer for Samsung DVR</title>, login: true!
+webserver found: http://2.218.152.8:80/ , server header: DNVRS-Webs, title: <title>index</title>, login: true!
+webserver found: http://2.218.154.118:80/ , server header: DNVRS-Webs, title: <title>index</title>, login: true!
+webserver found: http://2.218.154.126:80/ , server header: Apache, title: null, login: true!
+webserver found: http://2.218.156.61:80/ , server header: DNVRS-Webs, title: <title></title>, login: true!
+webserver found: http://2.218.157.121:80/ , server header: DNVRS-Webs, title: <title>index</title>, login: true!
+webserver found: http://2.218.159.101:80/ , server header: DNVRS-Webs, title: <title>index</title>, login: true!
+webserver found: http://2.218.159.108:80/ , server header: lighttpd/1.4.28, title: null, login: true!

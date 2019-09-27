@@ -22,6 +22,7 @@
     <div id="results"></div>
     <script>
         // check results from server
+        let lastsave = 0;
         function checkUrls() {
             const resultDIV = document.getElementById('results');
             const stats = document.getElementById('stats');
@@ -29,18 +30,20 @@
                 var urls = await response.json();
                 console.log('urls: ' + urls.length);
                 stats.innerText = urls.length;
-                if (urls.length > 0) {
+                if (urls.length > lastsave) {
                     resultDIV.innerHTML = '';
                     // show img
                     urls.forEach(url => {
                         resultDIV.insertAdjacentHTML(
                             'beforeend',
-                            '<img src="' + url +'"/><br>'
+                            '<p><img src="' + url +'"/><br>' +
+                            'SOURCE: ' + url + '</p>'
                         );
                     });
                 }
+                lastsave = urls.length;
             })
-            setTimeout(checkUrls, 30 * 1000);
+            setTimeout(checkUrls, 120 * 1000);
         }
         checkUrls();
     </script>

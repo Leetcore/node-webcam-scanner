@@ -1,6 +1,6 @@
 {
   "name": "webcamscanner",
-  "version": "1.0.0",
+  "version": "3.0.0",
   "description": "Scans IP range for open webcams",
   "main": "server.js",
   "scripts": {
@@ -16,5 +16,8 @@
     "evilscan": "^1.7.5",
     "express": "^4.16.4",
     "request": "^2.88.0"
+  },
+  "dependencies": {
+    "node-html-parser": "^1.1.16"
   }
 }
