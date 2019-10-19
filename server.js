@@ -32,44 +32,37 @@ async function startScanner() {
 
     webcamUrls = [];
 
+    // load the webcam urls we found
     require('fs').readFileSync('found.txt').toString().split('\n').forEach(function (line) {
         if (line.length > 0) {
             webcamUrls.push(line);
         } 
     });
 
+    // save the last used ip in a status file to resume scanning
     var ip = require('fs').readFileSync('status.txt').toString();
     var oct1start = 1;
     var oct2start = 1;
     var oct3start = 1;
     var oct4start = 1;
+
+    // split the last ip to resume scanning
     try {
         var ip_split = ip.split('.');
         oct1start = ip_split[0];
         oct2start = ip_split[1];
         oct3start = ip_split[2];
         oct4start = ip_split[3];
-        console.log('resume ip scan');
+        progress('resume ip scan');
     } catch (error) {
         console.warn('last ip read error');
     }
-
-    // example range: 93.210.176.0/24, 87.97.166.87
-    // my range: 87.169.162.0/24
-    // full range: 87.160.0.0 - 87.186.159.255
-
-    // IPv4 scan
-    // const scanRange = '0.0.0.0/32';
-    // console.log('scan range: '+ scanRange)
-    // await scanner(scanRange, defaultPorts).catch(error => {
-    //     console.warn(error);
-    // });
-
     for (var oct1 = oct1start; oct1 < 253; oct1++) {
         for (var oct2 = oct2start; oct2 < 253; oct2++) {
             for (var oct3 = oct3start; oct3 < 253; oct3++) {
                 for (var oct4 = oct4start; oct4 < 253; oct4++) {
                     const ip = oct1+'.'+oct2+'.'+oct3+'.'+oct4;
+                    // await is a promise for waiting that this request finishes first
                     if (oct4 % 10 == 0) {
                         await checkConnection(ip, 80).catch(error => {
                             // nothing
@@ -110,49 +103,60 @@ startScanner();
 function checkConnection(ip, port) {
     return new Promise(function(resolve, reject) {
         // try connection
-        console.log('try '+ ip);
+        let url = 'http://' + ip + ':' + port + '/';
         request({
-            url: 'http://' + ip + ':' + port + '/',
+            url: url,
             timeout: 1500
         }, function (error, response) {
             if (error) {
                 reject();
             }
 
-            if (!error && response.statusCode == 200) {
+            if (!error && response.statusCode >= 200 && response.statusCode < 300) {
+                // parse request answer
                 const document = parse(response.body);
                 const output = [];
     
+                // find meta tag title
                 const title = document.querySelector('title');
-                const inputform = document.querySelectorAll('input[type="password"]');
+                
+                // check if there is a password field on the page
+                let passwordInputPosition = document.innerHTML.toLowerCase().indexOf('type="password"');
+                if (passwordInputPosition < 0) {
+                    // second selector
+                    passwordInputPosition = document.innerHTML.toLowerCase().indexOf("type='password'");
+                }
     
-                output.push('webserver found: http://' + ip + ':' + port + '/ ');
+                // build string for logfile
+                output.push('webserver found: '+ url);
                 output.push('server header: '+ (response.headers.server || 'no entry'));
                 output.push('title: '+ title);
-                if (inputform) {
+                if (passwordInputPosition >= 0) {
                     output.push('login: true!');
+                } else {
+                    output.push('login: noauth!');
                 }
     
                 const fullmessage = output.join(', ');
-    
                 console.log(fullmessage);
 
-                // write ip in file
+                // write ip in a log file
                 fs.appendFile('log.txt', fullmessage + '\n', function (err) {
                     if (err) throw err;
                 });
     
                 // check header for ip webcam
                 if ((response.headers.server || '').toLowerCase().indexOf('ip webcam') >= 0) {
+                    // guess videourl
                     const videoUrl = 'http://' + ip + ':' + port + '/video';
-                    console.log('>>> ip webcam found! :' + url);
+                    console.log('>>> ip webcam! :' + url);
     
-                    // list with "webcam urls"
+                    // save webcam urls in file
                     fs.appendFile('found.txt', videoUrl + '\n', function (err) {
                         if (err) throw err;
                     });
     
-                    // save url in results
+                    // save url in webcamurls to display on the webpage
                     webcamUrls.push(videoUrl);
                 }
             }
